@@ -5,30 +5,30 @@ import officeReception from "@/assets/office-reception.jpg";
 
 const About = () => {
   return (
-    <section id="sobre" className="py-20 px-4 bg-muted/30">
+    <section id="sobre" className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 bg-muted/30">
       <div className="container mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
+        <div className="text-center mb-10 sm:mb-12 md:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-4">
             Quem somos
           </h2>
           <div className="w-20 h-1 bg-primary mx-auto" />
         </div>
 
         {/* Image Section */}
-        <div className="mb-16 grid md:grid-cols-2 gap-8">
+        <div className="mb-10 sm:mb-12 md:mb-16 grid sm:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
           <img
             src={officeReception}
             alt="Recepção Flash Publicidade"
-            className="w-full h-96 object-cover rounded-2xl shadow-lg"
+            className="w-full h-64 sm:h-80 md:h-96 object-cover rounded-xl sm:rounded-2xl shadow-lg"
           />
           <img
             src={aboutTeam}
             alt="Equipe Flash Publicidade"
-            className="w-full h-96 object-cover rounded-2xl shadow-lg"
+            className="w-full h-64 sm:h-80 md:h-96 object-cover rounded-xl sm:rounded-2xl shadow-lg"
           />
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 mb-16">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8 mb-10 sm:mb-12 md:mb-16">
           <Card className="border-none shadow-md hover:shadow-lg transition-shadow">
             <CardContent className="pt-8">
               <div className="flex justify-center mb-4">
@@ -36,10 +36,10 @@ const About = () => {
                   <Target className="h-8 w-8 text-primary" />
                 </div>
               </div>
-              <h3 className="text-xl font-bold text-center mb-4 text-foreground">
+              <h3 className="text-lg sm:text-xl font-bold text-center mb-3 sm:mb-4 text-foreground">
                 Missão
               </h3>
-              <p className="text-muted-foreground text-center leading-relaxed">
+              <p className="text-sm sm:text-base text-muted-foreground text-center leading-relaxed">
                 Capacitar pequenas e médias empresas com soluções completas de publicidade
                 integrada, oferecendo a mais alta qualidade em comunicação visual, digital
                 e gráfica a um preço justo. Ser o resolvedor de problemas que conecta
@@ -55,10 +55,10 @@ const About = () => {
                   <Eye className="h-8 w-8 text-primary" />
                 </div>
               </div>
-              <h3 className="text-xl font-bold text-center mb-4 text-foreground">
+              <h3 className="text-lg sm:text-xl font-bold text-center mb-3 sm:mb-4 text-foreground">
                 Visão
               </h3>
-              <p className="text-muted-foreground text-center leading-relaxed">
+              <p className="text-sm sm:text-base text-muted-foreground text-center leading-relaxed">
                 Ser, em até cinco anos, a principal agência de publicidade integrada e
                 referência em Mato Grosso e Mato Grosso do Sul. Consolidar nossa
                 capacidade de atendimento B2B e B2C com produção e equipe próprias.
@@ -73,10 +73,10 @@ const About = () => {
                   <Heart className="h-8 w-8 text-primary" />
                 </div>
               </div>
-              <h3 className="text-xl font-bold text-center mb-4 text-foreground">
+              <h3 className="text-lg sm:text-xl font-bold text-center mb-3 sm:mb-4 text-foreground">
                 Valores
               </h3>
-              <ul className="text-muted-foreground space-y-2 text-center leading-relaxed">
+              <ul className="text-sm sm:text-base text-muted-foreground space-y-2 text-center leading-relaxed">
                 <li>Integridade e transparência</li>
                 <li>Agilidade "Flash"</li>
                 <li>Qualidade inegociável</li>
@@ -87,11 +87,11 @@ const About = () => {
           </Card>
         </div>
 
-        <div className="text-center max-w-3xl mx-auto">
-          <p className="text-2xl md:text-3xl font-bold text-primary mb-4">
+        <div className="text-center max-w-3xl mx-auto px-4">
+          <p className="text-xl sm:text-2xl md:text-3xl font-bold text-primary mb-3 sm:mb-4">
             SOMOS MUITO MAIS QUE IMPRESSÃO
           </p>
-          <p className="text-lg text-muted-foreground">
+          <p className="text-base sm:text-lg text-muted-foreground">
             Sua solução completa, do conceito ao resultado líder.
           </p>
         </div>
