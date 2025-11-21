@@ -9,6 +9,9 @@ import {
 import { Card, CardContent } from "@/components/ui/card";
 import servicesVisual from "@/assets/services-visual.jpg";
 import digitalMarketing from "@/assets/digital-marketing.jpg";
+import vehicleWrap from "@/assets/vehicle-wrap.jpg";
+import printingProduction from "@/assets/printing-production.jpg";
+import socialMediaTablet from "@/assets/social-media-tablet.jpg";
 
 const Services = () => {
   const services = [
@@ -64,17 +67,42 @@ const Services = () => {
         </div>
 
         {/* Images Grid */}
-        <div className="grid md:grid-cols-2 gap-8 mb-16">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           <img
             src={servicesVisual}
-            alt="Materiais gráficos e impressos"
+            alt="Materiais gráficos e impressos Flash Publicidade"
             className="w-full h-80 object-cover rounded-2xl shadow-lg"
           />
           <img
             src={digitalMarketing}
-            alt="Marketing digital e redes sociais"
+            alt="Marketing digital Flash Publicidade"
             className="w-full h-80 object-cover rounded-2xl shadow-lg"
           />
+          <img
+            src={printingProduction}
+            alt="Produção gráfica Flash Publicidade"
+            className="w-full h-80 object-cover rounded-2xl shadow-lg"
+          />
+          <img
+            src={vehicleWrap}
+            alt="Plotagem de frota Flash Publicidade"
+            className="w-full h-80 object-cover rounded-2xl shadow-lg"
+          />
+          <img
+            src={socialMediaTablet}
+            alt="Gestão de redes sociais Flash Publicidade"
+            className="w-full h-80 object-cover rounded-2xl shadow-lg"
+          />
+          <div className="w-full h-80 bg-gradient-to-br from-primary/20 to-primary/5 rounded-2xl shadow-lg flex items-center justify-center p-8">
+            <div className="text-center">
+              <h3 className="text-2xl font-bold text-foreground mb-4">
+                E muito mais!
+              </h3>
+              <p className="text-muted-foreground">
+                Soluções personalizadas para cada necessidade
+              </p>
+            </div>
+          </div>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
