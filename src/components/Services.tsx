@@ -7,6 +7,8 @@ import {
   User,
 } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import servicesVisual from "@/assets/services-visual.jpg";
+import digitalMarketing from "@/assets/digital-marketing.jpg";
 
 const Services = () => {
   const services = [
@@ -59,6 +61,20 @@ const Services = () => {
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Soluções completas em publicidade integrada para impulsionar sua marca
           </p>
+        </div>
+
+        {/* Images Grid */}
+        <div className="grid md:grid-cols-2 gap-8 mb-16">
+          <img
+            src={servicesVisual}
+            alt="Materiais gráficos e impressos"
+            className="w-full h-80 object-cover rounded-2xl shadow-lg"
+          />
+          <img
+            src={digitalMarketing}
+            alt="Marketing digital e redes sociais"
+            className="w-full h-80 object-cover rounded-2xl shadow-lg"
+          />
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
