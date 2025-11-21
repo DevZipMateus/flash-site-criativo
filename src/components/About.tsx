@@ -1,6 +1,7 @@
 import { Target, Eye, Heart } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import aboutTeam from "@/assets/about-team.jpg";
+import officeReception from "@/assets/office-reception.jpg";
 
 const About = () => {
   return (
@@ -14,11 +15,16 @@ const About = () => {
         </div>
 
         {/* Image Section */}
-        <div className="mb-16">
+        <div className="mb-16 grid md:grid-cols-2 gap-8">
+          <img
+            src={officeReception}
+            alt="Recepção Flash Publicidade"
+            className="w-full h-96 object-cover rounded-2xl shadow-lg"
+          />
           <img
             src={aboutTeam}
             alt="Equipe Flash Publicidade"
-            className="w-full max-w-4xl mx-auto rounded-2xl shadow-lg"
+            className="w-full h-96 object-cover rounded-2xl shadow-lg"
           />
         </div>
 
