@@ -15,7 +15,7 @@ const Hero = () => {
       });
     }
   };
-  return <section id="hero" className="relative pt-32 pb-20 px-4 overflow-hidden" style={{
+  return <section id="hero" className="relative pt-24 sm:pt-28 md:pt-32 pb-12 sm:pb-16 md:pb-20 px-4 sm:px-6 overflow-hidden" style={{
     backgroundImage: `url(${heroBackground})`,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
@@ -26,21 +26,21 @@ const Hero = () => {
       
       <div className="container mx-auto relative z-10">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="flex justify-center mb-8 animate-fade-in">
-            <img src={logoVertical} alt="Flash Publicidade" className="h-64 md:h-80 w-auto" />
+          <div className="flex justify-center mb-6 sm:mb-8 animate-fade-in">
+            <img src={logoVertical} alt="Flash Publicidade" className="h-48 sm:h-56 md:h-72 lg:h-80 w-auto" />
           </div>
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 animate-fade-in">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-foreground mb-4 sm:mb-6 animate-fade-in">
             flashpublicidade
           </h1>
-          <h2 className="text-2xl md:text-3xl lg:text-4xl text-foreground/80 mb-8 animate-fade-in">
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-foreground/80 mb-6 sm:mb-8 animate-fade-in px-4">
             Sua solução completa em publicidade integrada
           </h2>
-          <p className="text-lg md:text-xl mb-10 max-w-2xl mx-auto animate-fade-in text-zinc-950">
+          <p className="text-base sm:text-lg md:text-xl mb-8 sm:mb-10 max-w-2xl mx-auto animate-fade-in text-zinc-950 px-4">
             Somos muito mais que impressão. Do conceito ao resultado líder, oferecemos
             comunicação visual, digital e gráfica com qualidade inegociável.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in">
-            <Button onClick={scrollToContact} size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground group">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center animate-fade-in px-4">
+            <Button onClick={scrollToContact} size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground group text-sm sm:text-base w-full sm:w-auto">
               Solicite um orçamento
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Button>
@@ -55,7 +55,7 @@ const Hero = () => {
                 behavior: "smooth"
               });
             }
-          }} size="lg" variant="outline" className="border-primary/60 text-foreground hover:bg-primary/10 hover:border-primary">
+          }} size="lg" variant="outline" className="border-primary/60 text-foreground hover:bg-primary/10 hover:border-primary text-sm sm:text-base w-full sm:w-auto">
               Conheça nossos serviços
             </Button>
           </div>
