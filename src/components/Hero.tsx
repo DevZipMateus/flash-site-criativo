@@ -1,5 +1,6 @@
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logoVertical from "@/assets/logo-vertical.png";
 
 const Hero = () => {
   const scrollToContact = () => {
@@ -26,6 +27,13 @@ const Hero = () => {
     >
       <div className="container mx-auto">
         <div className="max-w-4xl mx-auto text-center">
+          <div className="flex justify-center mb-8 animate-fade-in">
+            <img 
+              src={logoVertical} 
+              alt="Flash Publicidade" 
+              className="h-64 md:h-80 w-auto"
+            />
+          </div>
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 animate-fade-in">
             flashpublicidade
           </h1>
