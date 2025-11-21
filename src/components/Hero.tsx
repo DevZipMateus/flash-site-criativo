@@ -30,7 +30,7 @@ const Hero = () => {
       }}
     >
       {/* Overlay for better text readability */}
-      <div className="absolute inset-0 bg-background/85 backdrop-blur-sm" />
+      <div className="absolute inset-0 bg-background/40 backdrop-blur-sm" />
       
       <div className="container mx-auto relative z-10">
         <div className="max-w-4xl mx-auto text-center">
