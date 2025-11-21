@@ -3,7 +3,7 @@ import logoHorizontal from "@/assets/logo-horizontal.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-muted/30 text-foreground py-12 px-4">
+    <footer className="bg-footer text-foreground py-12 px-4">
       <div className="container mx-auto">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           {/* Logo e Descrição */}

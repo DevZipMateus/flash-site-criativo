@@ -43,6 +43,7 @@ All colors MUST be HSL.
     --shadow-soft: 0 4px 24px -8px hsl(37 97% 66% / 0.2);
     --shadow-medium: 0 8px 32px -8px hsl(37 97% 66% / 0.3);
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --footer-bg: 0 0% 74%;
 
     --sidebar-background: 0 0% 98%;
 
