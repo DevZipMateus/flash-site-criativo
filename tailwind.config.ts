@@ -62,6 +62,9 @@ export default {
         soft: "var(--shadow-soft)",
         medium: "var(--shadow-medium)",
       },
+      backgroundColor: {
+        "footer": "hsl(var(--footer-bg))",
+      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
