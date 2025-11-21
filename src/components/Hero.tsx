@@ -1,6 +1,7 @@
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import logoVertical from "@/assets/logo-vertical.png";
+import heroBackground from "@/assets/hero-background.jpg";
 
 const Hero = () => {
   const scrollToContact = () => {
@@ -22,10 +23,16 @@ const Hero = () => {
       id="hero"
       className="relative pt-32 pb-20 px-4 overflow-hidden"
       style={{
-        background: "linear-gradient(135deg, hsl(37 97% 66% / 0.1), hsl(37 97% 76% / 0.05))",
+        backgroundImage: `url(${heroBackground})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
       }}
     >
-      <div className="container mx-auto">
+      {/* Overlay for better text readability */}
+      <div className="absolute inset-0 bg-background/85 backdrop-blur-sm" />
+      
+      <div className="container mx-auto relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           <div className="flex justify-center mb-8 animate-fade-in">
             <img 
