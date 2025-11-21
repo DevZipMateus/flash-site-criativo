@@ -8,11 +8,13 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           {/* Logo e Descrição */}
           <div className="lg:col-span-2">
-            <img
-              src={logoHorizontal}
-              alt="Flash Publicidade"
-              className="h-16 w-auto mb-4"
-            />
+            <div className="bg-background p-4 rounded-lg inline-block mb-4">
+              <img
+                src={logoHorizontal}
+                alt="Flash Publicidade"
+                className="h-16 w-auto"
+              />
+            </div>
             <p className="text-muted-foreground mb-4 max-w-md">
               Sua solução completa em publicidade integrada. Do conceito ao resultado
               líder.
