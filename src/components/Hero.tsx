@@ -35,7 +35,7 @@ const Hero = () => {
           <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-foreground/80 mb-6 sm:mb-8 animate-fade-in px-4">
             Sua solução completa em publicidade integrada
           </h2>
-          <p className="text-base sm:text-lg md:text-xl mb-8 sm:mb-10 max-w-2xl mx-auto animate-fade-in text-zinc-950 px-4">
+          <p className="text-base sm:text-lg md:text-xl mb-8 sm:mb-10 max-w-2xl mx-auto animate-fade-in px-4 text-white">
             Somos muito mais que impressão. Do conceito ao resultado líder, oferecemos
             comunicação visual, digital e gráfica com qualidade inegociável.
           </p>
