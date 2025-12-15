@@ -5,13 +5,17 @@ import officeReception from "@/assets/office-reception.jpg";
 
 const About = () => {
   return (
-    <section id="sobre" className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 bg-muted/30">
-      <div className="container mx-auto">
+    <section id="sobre" className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 bg-muted/30 relative overflow-hidden">
+      {/* Orange glow effects */}
+      <div className="absolute top-0 right-0 w-96 h-96 bg-primary/15 rounded-full blur-3xl" />
+      <div className="absolute bottom-0 left-0 w-80 h-80 bg-primary/10 rounded-full blur-3xl" />
+      
+      <div className="container mx-auto relative z-10">
         <div className="text-center mb-10 sm:mb-12 md:mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-4">
             Quem somos
           </h2>
-          <div className="w-20 h-1 bg-primary mx-auto" />
+          <div className="w-20 h-1 bg-primary mx-auto rounded-full shadow-[0_0_20px_hsl(37_97%_66%/0.5)]" />
         </div>
 
         {/* Image Section */}

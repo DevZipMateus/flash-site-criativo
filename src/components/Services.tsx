@@ -54,13 +54,18 @@ const Services = () => {
   ];
 
   return (
-    <section id="servicos" className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 bg-background">
-      <div className="container mx-auto">
+    <section id="servicos" className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 bg-background relative overflow-hidden">
+      {/* Orange glow effects */}
+      <div className="absolute top-1/4 left-0 w-72 h-72 bg-primary/20 rounded-full blur-3xl" />
+      <div className="absolute bottom-1/4 right-0 w-96 h-96 bg-primary/15 rounded-full blur-3xl" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-primary/5 rounded-full blur-3xl" />
+      
+      <div className="container mx-auto relative z-10">
         <div className="text-center mb-10 sm:mb-12 md:mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-4">
             Nossos serviços
           </h2>
-          <div className="w-20 h-1 bg-primary mx-auto mb-4 sm:mb-6" />
+          <div className="w-20 h-1 bg-primary mx-auto mb-4 sm:mb-6 rounded-full shadow-[0_0_20px_hsl(37_97%_66%/0.5)]" />
           <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto px-4">
             Soluções completas em publicidade integrada para impulsionar sua marca
           </p>
