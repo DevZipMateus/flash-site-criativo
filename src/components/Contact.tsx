@@ -4,13 +4,17 @@ import { Button } from "@/components/ui/button";
 
 const Contact = () => {
   return (
-    <section id="contato" className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 bg-muted/30">
-      <div className="container mx-auto">
+    <section id="contato" className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 bg-muted/30 relative overflow-hidden">
+      {/* Orange glow effects */}
+      <div className="absolute top-0 left-1/4 w-80 h-80 bg-primary/20 rounded-full blur-3xl" />
+      <div className="absolute bottom-0 right-1/4 w-72 h-72 bg-primary/15 rounded-full blur-3xl" />
+      
+      <div className="container mx-auto relative z-10">
         <div className="text-center mb-10 sm:mb-12 md:mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-4">
             Entre em contato
           </h2>
-          <div className="w-20 h-1 bg-primary mx-auto mb-4 sm:mb-6" />
+          <div className="w-20 h-1 bg-primary mx-auto mb-4 sm:mb-6 rounded-full shadow-[0_0_20px_hsl(37_97%_66%/0.5)]" />
           <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto px-4">
             Estamos prontos para transformar suas ideias em resultados
           </p>
