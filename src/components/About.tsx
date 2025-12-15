@@ -6,9 +6,28 @@ import officeReception from "@/assets/office-reception.jpg";
 const About = () => {
   return (
     <section id="sobre" className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 bg-muted/30 relative overflow-hidden">
+      {/* Diagonal decorative elements */}
+      <div className="absolute top-0 left-0 w-full h-32 overflow-hidden pointer-events-none">
+        <div className="absolute w-[200%] h-[2px] bg-gradient-to-r from-transparent via-primary/40 to-transparent -rotate-3 top-8 -left-1/4" 
+          style={{ boxShadow: '0 0 20px hsl(var(--primary) / 0.4)' }} />
+      </div>
+      <div className="absolute bottom-0 right-0 w-full h-32 overflow-hidden pointer-events-none">
+        <div className="absolute w-[200%] h-[2px] bg-gradient-to-r from-transparent via-primary/40 to-transparent rotate-3 bottom-8 -right-1/4" 
+          style={{ boxShadow: '0 0 20px hsl(var(--primary) / 0.4)' }} />
+      </div>
+      
       {/* Orange glow effects */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-primary/15 rounded-full blur-3xl" />
       <div className="absolute bottom-0 left-0 w-80 h-80 bg-primary/10 rounded-full blur-3xl" />
+      <div className="absolute top-1/2 left-1/4 w-64 h-64 bg-primary/10 rounded-full blur-3xl" />
+      
+      {/* Diagonal accent shapes */}
+      <svg className="absolute top-20 right-10 w-32 h-32 opacity-20 pointer-events-none" viewBox="0 0 100 100">
+        <polygon points="0,100 100,0 100,100" fill="hsl(var(--primary))" />
+      </svg>
+      <svg className="absolute bottom-20 left-10 w-24 h-24 opacity-15 pointer-events-none" viewBox="0 0 100 100">
+        <polygon points="0,0 100,100 0,100" fill="hsl(var(--primary))" />
+      </svg>
       
       <div className="container mx-auto relative z-10">
         <div className="text-center mb-10 sm:mb-12 md:mb-16">

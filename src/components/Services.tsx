@@ -55,10 +55,31 @@ const Services = () => {
 
   return (
     <section id="servicos" className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 bg-background relative overflow-hidden">
+      {/* Diagonal decorative elements */}
+      <div className="absolute top-0 left-0 w-full h-32 overflow-hidden pointer-events-none">
+        <div className="absolute w-[200%] h-[2px] bg-gradient-to-r from-transparent via-primary/50 to-transparent rotate-2 top-12 -left-1/4" 
+          style={{ boxShadow: '0 0 25px hsl(var(--primary) / 0.5)' }} />
+      </div>
+      <div className="absolute bottom-0 right-0 w-full h-32 overflow-hidden pointer-events-none">
+        <div className="absolute w-[200%] h-[2px] bg-gradient-to-r from-transparent via-primary/50 to-transparent -rotate-2 bottom-12 -right-1/4" 
+          style={{ boxShadow: '0 0 25px hsl(var(--primary) / 0.5)' }} />
+      </div>
+      
       {/* Orange glow effects */}
       <div className="absolute top-1/4 left-0 w-72 h-72 bg-primary/20 rounded-full blur-3xl" />
       <div className="absolute bottom-1/4 right-0 w-96 h-96 bg-primary/15 rounded-full blur-3xl" />
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-primary/5 rounded-full blur-3xl" />
+      
+      {/* Diagonal accent shapes */}
+      <svg className="absolute top-40 left-5 w-40 h-40 opacity-10 pointer-events-none" viewBox="0 0 100 100">
+        <polygon points="0,0 100,50 0,100" fill="hsl(var(--primary))" />
+      </svg>
+      <svg className="absolute bottom-40 right-5 w-48 h-48 opacity-10 pointer-events-none" viewBox="0 0 100 100">
+        <polygon points="100,0 0,50 100,100" fill="hsl(var(--primary))" />
+      </svg>
+      <svg className="absolute top-1/3 right-1/4 w-20 h-20 opacity-15 pointer-events-none" viewBox="0 0 100 100">
+        <polygon points="50,0 100,100 0,100" fill="hsl(var(--primary))" />
+      </svg>
       
       <div className="container mx-auto relative z-10">
         <div className="text-center mb-10 sm:mb-12 md:mb-16">
