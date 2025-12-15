@@ -4,6 +4,7 @@ import About from "@/components/About";
 import Services from "@/components/Services";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import DiagonalDivider from "@/components/DiagonalDivider";
 
 const Index = () => {
   return (
@@ -11,8 +12,11 @@ const Index = () => {
       <Header />
       <main>
         <Hero />
+        <DiagonalDivider direction="left" />
         <About />
+        <DiagonalDivider direction="right" />
         <Services />
+        <DiagonalDivider direction="left" />
         <Contact />
       </main>
       <Footer />
