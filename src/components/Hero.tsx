@@ -21,8 +21,6 @@ const Hero = () => {
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat'
   }}>
-      {/* Dark overlay */}
-      <div className="absolute inset-0 bg-black/85" />
       
       <div className="container mx-auto relative z-10">
         <div className="max-w-4xl mx-auto text-center">
