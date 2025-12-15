@@ -21,8 +21,6 @@ const Hero = () => {
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat'
   }}>
-      {/* Overlay for better text readability */}
-      <div className="absolute inset-0 bg-background/60" />
       
       <div className="container mx-auto relative z-10">
         <div className="max-w-4xl mx-auto text-center">
