@@ -1,6 +1,6 @@
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import logoVertical from "@/assets/logo-vertical.png";
+import logoVertical from "@/assets/logo-vertical-white.png";
 import heroBackground from "@/assets/hero-background.jpg";
 const Hero = () => {
   const scrollToContact = () => {
