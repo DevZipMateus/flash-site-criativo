@@ -37,8 +37,7 @@ const Hero = () => {
                 Do conceito ao resultado, oferecemos comunicação visual, digital e gráfica com qualidade inegociável.
           </h2>
           <p className="text-base sm:text-lg md:text-xl mb-8 sm:mb-10 max-w-2xl mx-auto animate-fade-in px-4 text-white">
-            Somos muito mais que impressão. Do conceito ao resultado líder, oferecemos
-            comunicação visual, digital e gráfica com qualidade inegociável.
+            Do conceito ao resultado, oferecemos comunicação visual, digital e gráfica com qualidade inegociável.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center animate-fade-in px-4">
             <Button onClick={scrollToContact} size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground group text-sm sm:text-base w-full sm:w-auto">
