@@ -27,10 +27,10 @@ const Hero = () => {
           <div className="flex justify-center mb-6 sm:mb-8 animate-fade-in">
             <img src={logoVertical} alt="Flash Publicidade" className="h-48 sm:h-56 md:h-72 lg:h-80 w-auto" />
           </div>
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-foreground mb-4 sm:mb-6 animate-fade-in">
+          <h1 className="sr-only">
             flashpublicidade
           </h1>
-          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-foreground/80 mb-6 sm:mb-8 animate-fade-in px-4">
+          <h2 className="sr-only">
             Sua solução completa em publicidade integrada
           </h2>
           <p className="text-base sm:text-lg md:text-xl mb-8 sm:mb-10 max-w-2xl mx-auto animate-fade-in px-4 text-white">
