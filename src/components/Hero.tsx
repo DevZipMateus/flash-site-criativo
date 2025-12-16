@@ -24,8 +24,11 @@ const Hero = () => {
       
       <div className="container mx-auto relative z-10">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="flex justify-center mb-6 sm:mb-8 animate-fade-in">
+          <div className="flex flex-col items-center mb-6 sm:mb-8 animate-fade-in">
             <img src={logoVertical} alt="Flash Publicidade" className="h-48 sm:h-56 md:h-72 lg:h-80 w-auto" />
+            <p className="text-xl sm:text-2xl md:text-3xl font-bold text-primary mt-4 tracking-wider">
+              SOMOS MUITO +Q IMPRESSÃO
+            </p>
           </div>
           <h1 className="sr-only">
             flashpublicidade
